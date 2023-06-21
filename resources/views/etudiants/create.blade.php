@@ -9,7 +9,7 @@
                 border: navy;
             }
             .btn-custom.btn-primary:hover {
-                background-color: #40B1C0; /* Cor de fundo do btn-primary */
+                background-color: #40B1C0; 
                 color: white;
                 border: white;
             }

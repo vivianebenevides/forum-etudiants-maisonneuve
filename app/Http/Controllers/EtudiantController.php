@@ -47,7 +47,7 @@ class EtudiantController extends Controller
 
 
         $newEtudiant = Etudiant::create([
-            'nom' => $request->nom,
+            'name' => $request->name,
             'adresse' => $request->adresse,
             'ville_id' => $request->ville_id,
             'phone' => $request->phone,
@@ -96,7 +96,7 @@ class EtudiantController extends Controller
         $dateDeNaissance = date('Y-m-d', strtotime(str_replace('/', '-', $request->date_de_naissance)));
 
         $etudiant->update([
-            'nom' => $request->nom,
+            'name' => $request->name,
             'adresse' => $request->adresse,
             'ville_id' => $request->ville_id,
             'phone' => $request->phone,

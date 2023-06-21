@@ -42,13 +42,13 @@
                 <div class="card">
                     <div class="card-header">
                         <h4>Liste des étudiants</h4>
-                        <p>Cliquez sur un étudiants pour l'afficher</p>
+                        <p>Cliquez sur un étudiant pour l'afficher</p>
                     </div>
                     <div class="card-body">
                 @foreach($etudiants as $index => $etudiant)
                     <div class="row mb-0 {{ $index % 2 == 0 ? 'gray-bg' : 'lightgray-bg' }} custom-row">
                         <div class="col-12">
-                            <a href="{{ route('etudiants.show', $etudiant->id)}}" class="text-dark no-underline">{{$etudiant->nom}}</a>
+                            <a href="{{ route('etudiants.show', $etudiant->id)}}" class="text-dark no-underline">{{$etudiant->name}}</a>
                         </div>
                     </div>
                 @endforeach

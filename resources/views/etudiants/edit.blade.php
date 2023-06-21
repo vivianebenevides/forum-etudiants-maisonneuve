@@ -9,7 +9,7 @@
                 border: navy;
             }
             .btn-custom.btn-primary:hover {
-                background-color: #40B1C0; /* Cor de fundo do btn-primary */
+                background-color: #40B1C0;
                 color: white;
                 border: white;
             }
@@ -26,7 +26,7 @@
                     <div class="card-body">
                         <label for="nom">Nom</label>
                         <input type="text" id="nom" name="nom" 
-                        class="form-control" value="{{$etudiant->nom}}">
+                        class="form-control" value="{{$etudiant->name}}">
 
                         <label for="adresse">Adresse</label>
                         <input type="text" id="adresse" name="adresse" 

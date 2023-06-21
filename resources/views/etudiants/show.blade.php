@@ -9,17 +9,17 @@
                 border: navy;
             }
             .btn-custom.btn-primary:hover {
-                background-color: #40B1C0; /* Cor de fundo do btn-primary */
+                background-color: #40B1C0;
                 color: white;
                 border: white;
             }
             .btn-custom-modifier.btn-primary:hover {
-                background-color: navy; /* Cor de fundo do btn-primary */
+                background-color: navy; 
                 color: white;
                 border: white;
             }
             .btn-custom-danger.btn-primary:hover {
-                background-color: black; /* Cor de fundo do btn-primary */
+                background-color: black; 
                 color: white;
                 border: white;
             }
@@ -39,7 +39,7 @@
                 <a href="{{route('etudiants.index')}}" class="btn btn-custom btn-primary btn-sm">Retourner</a>
                 <div class="card p-4 mt-4 mb-4 bg-light">
                   <h4 class='display-8 mt-3 pb-3' >
-                      {{$etudiants->nom}}
+                      {{$etudiants->name}}
                   </h4>
                   <p><strong>Adresse :</strong> {{ $etudiants->adresse }}</p> 
                   <p><strong>Ville :</strong> {{ $etudiants->etudiantHasVille->nom }}</p>  
@@ -70,7 +70,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Voulez vous vraimente effacer la donnee : {{ $etudiants->nom }}
+        Voulez vous vraimente effacer la donnee : {{ $etudiants->name }}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

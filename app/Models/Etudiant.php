@@ -12,7 +12,7 @@ class Etudiant extends Model
     //protected $table = 'etudiants'; 
 
     protected $fillable = [
-        'nom',
+        'name',
         'adresse',
         'phone',
         'email',
@@ -24,4 +24,11 @@ class Etudiant extends Model
     {
         return $this->hasOne('App\Models\Ville', 'id', 'ville_id');
     }
+
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+    
+
 }

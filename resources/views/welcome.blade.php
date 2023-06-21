@@ -1,7 +1,8 @@
 @extends('layouts.app')
-@section('title', config('app.name'))
-@section('titleHeader', config('app.name'))
+@section('title', trans('lang.text_title_welcome'))
+@section('titleHeader', trans('lang.text_title_welcome'))
 @section('content')
+
         <style>
             .btn-custom {
                 background-color: navy;
@@ -9,15 +10,15 @@
                 border: navy;
             }
             .btn-custom.btn-primary:hover {
-                background-color: #40B1C0; /* Cor de fundo do btn-primary */
+                background-color: #40B1C0; 
                 color: white;
                 border: white;
             }
         </style>
         <div class="row">
             <div class="col-12 text-center">
-                <h3 class="pt-4 pb-4">Bienvenue dans la base de données des étudiants du Collège Maisonneuve</h3>
-                <a href="{{ route('etudiants.index')}}" class="btn btn-custom btn-primary btn-lg">Afficher la liste des étudiants</a>
+                <h3 class="pt-4 pb-4">@lang('lang.text_welcome')</h3>
+                <a href="{{ route('forum.index')}}" class="btn btn-custom btn-primary btn-lg">@lang('lang.text_show_articles')</a>
             </div>
         </div>
 @endsection  
